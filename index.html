@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Modal Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Trigger Button -->
+    <button class="feedback-btn" id="openModalBtn">Give Feedback</button>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content" id="modalContent">
+            <!-- Close Button -->
+            <button class="close-btn" id="closeBtn">&times;</button>
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2>How would you rate our product?</h2>
+                <p>Your feedback helps us improve our service</p>
+            </div>
+
+            <!-- Rating Scale -->
+            <div class="rating-scale" id="ratingScale">
+                <div class="rating-option" data-value="1">1</div>
+                <div class="rating-option" data-value="2">2</div>
+                <div class="rating-option" data-value="3">3</div>
+                <div class="rating-option" data-value="4">4</div>
+                <div class="rating-option" data-value="5">5</div>
+                <div class="rating-option" data-value="6">6</div>
+                <div class="rating-option" data-value="7">7</div>
+                <div class="rating-option" data-value="8">8</div>
+                <div class="rating-option" data-value="9">9</div>
+                <div class="rating-option" data-value="10">10</div>
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage">
+                Thank you for your feedback!
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button class="cancel-btn" id="cancelBtn">Cancel</button>
+                <button class="submit-btn" id="submitBtn" disabled>Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
